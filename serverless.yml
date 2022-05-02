@@ -1,0 +1,25 @@
+frameworkVersion: '3'
+service: monorepo
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+custom:
+  serverless-offline:
+    httpPort: 4000
+plugins:
+  - serverless-offline
+
+functions:
+  recipes:
+    handler: ./services/recipes/handler.api
+    events:
+      - httpApi: 'GET /recipes'
+  users:
+    handler: ./services/users/handler.api
+    events:
+      - httpApi: 'GET /users'
+  orders:
+    handler: ./services/orders/handler.api
+    events:
+      - httpApi: 'GET /orders'

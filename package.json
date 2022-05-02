@@ -1,0 +1,11 @@
+{
+    "name": "monorepo",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "offline": "sls offline start"
+    },
+    "devDependencies": {
+        "serverless-offline": "^8.7.0"
+    }
+}
