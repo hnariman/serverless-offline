@@ -2,7 +2,7 @@
 example of microservices based on serverless framework
 
 Sample microservice based application, to test out local development of AWS Lambdas / Serverless framework.
-Hence local development is relatively harmless and improves development time.
+Hence local development is relatively harmless for stage data and might improve development time.
 
 ## TODO:
 - DynamoDB (native AWS)
